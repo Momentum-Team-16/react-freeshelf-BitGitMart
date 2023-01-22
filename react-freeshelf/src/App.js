@@ -4,7 +4,7 @@ import './App.css';
 const App = ({ books }) => {
   return (
    <div> 
-    <h1>It's books! it has the words.</h1> 
+    <h1>It's books! it has the words</h1> 
     {books.map((books) => (
           <div className="book-cover"> 
           <h2>{books.title}</h2>
@@ -33,8 +33,8 @@ const TellMeMore = ({url, publisher, date, details}) => {
     <button onClick={handleClick} type="button" aria-expanded={seeMore ? "true" : "false"}> 
     {seeMore ? 'No' : ''} Peekie</button> 
     {seeMore && 
-    <div className="seymour-skinner-box">
-    <strong>Link:</strong> <a href={url}>{url}</a>
+    <div className="sweet-whittle-box">
+    <strong>Link:</strong> <a id="sausage" href={url}>{url}</a>
     <p><strong>Full Description:</strong><br/>{details}</p>
     <p><strong>Publisher:</strong> {publisher ? <>{publisher}</> : "--"}  <br/><br/> 
     <strong>Publication Date:</strong> {date ? <>{date}</> : "--"}</p>

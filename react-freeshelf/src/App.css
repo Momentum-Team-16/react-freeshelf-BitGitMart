@@ -3,17 +3,40 @@
 }
 
 body {
-  background-color: blue;
+  background: linear-gradient(#1F51B5, #1D4DAD, #1C4AA5, #18449C, #153E92, #133A87, #12367E); 
   color: red; 
 }
 
 h1 {
+  color: #BBB03C;  
+  padding: 20px; 
+  margin: 30px; 
   text-align: center; 
+  text-decoration: underline 4px; 
+  font: sans-serif; 
+  font-size: 100px; 
+}
+
+#sausage {
+  color: white; 
 }
 
 .book-cover {
+  padding: 10px; 
+  margin: 100px; 
   border: 2px solid black; 
+  text-align: center; 
+  align-items: center; 
+  display: flex;
+  flex-direction: column; 
 }
+
+.sweet-whittle-box {
+  border: 2px solid #BBB03C; 
+  margin: 10px; 
+  padding: 10px; 
+}
+
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,17 +46,4 @@ h1 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} 
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 } */ 
