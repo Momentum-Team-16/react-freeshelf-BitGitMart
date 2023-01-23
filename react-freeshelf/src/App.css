@@ -17,8 +17,12 @@ h1 {
   font-size: 100px; 
 }
 
-#sausage {
+.sausage {
   color: white; 
+}
+
+.cover-image {
+  width: 300px; 
 }
 
 .book-cover {

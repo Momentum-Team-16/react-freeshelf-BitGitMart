@@ -1,5 +1,9 @@
 import { useState } from 'react'; 
 import './App.css';
+import backup from './platypus.png'; 
+
+
+const imageFixer = (e) => { e.target.src = backup; }
 
 const App = ({ books }) => {
   return (
@@ -10,7 +14,7 @@ const App = ({ books }) => {
           <h2>{books.title}</h2>
           <h3>{books.author}</h3> 
           <p>{books.shortDescription}</p> 
-          <img src={books.coverImageUrl} className="cover-image" alt="cover" /> 
+          <img src={books.coverImageUrl} className="cover-image" alt="cover" onError={imageFixer}/> 
           <br/> 
           <br/>
           <TellMeMore 
@@ -34,7 +38,7 @@ const TellMeMore = ({url, publisher, date, details}) => {
     {seeMore ? 'No' : ''} Peekie</button> 
     {seeMore && 
     <div className="sweet-whittle-box">
-    <strong>Link:</strong> <a id="sausage" href={url}>{url}</a>
+    <strong>Link:</strong> <a className="sausage" href={url}>{url}</a>
     <p><strong>Full Description:</strong><br/>{details}</p>
     <p><strong>Publisher:</strong> {publisher}  <br/><br/> 
     <strong>Publication Date:</strong> {date}</p> 
