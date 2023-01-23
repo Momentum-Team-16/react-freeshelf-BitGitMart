@@ -29,17 +29,17 @@ const TellMeMore = ({url, publisher, date, details}) => {
   const [seeMore, setSeeMore] = useState(false)
   const handleClick = (event) => {setSeeMore(!seeMore)}
   return (
-    <> 
+    <div> 
     <button onClick={handleClick} type="button" aria-expanded={seeMore ? "true" : "false"}> 
     {seeMore ? 'No' : ''} Peekie</button> 
     {seeMore && 
     <div className="sweet-whittle-box">
     <strong>Link:</strong> <a id="sausage" href={url}>{url}</a>
     <p><strong>Full Description:</strong><br/>{details}</p>
-    <p><strong>Publisher:</strong> {publisher ? <>{publisher}</> : "--"}  <br/><br/> 
-    <strong>Publication Date:</strong> {date ? <>{date}</> : "--"}</p>
+    <p><strong>Publisher:</strong> {publisher}  <br/><br/> 
+    <strong>Publication Date:</strong> {date}</p> 
     </div>}
-    </> 
+    </div> 
   )}; 
 
 export default App;
